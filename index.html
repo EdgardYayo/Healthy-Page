@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <meta charset="utf-8"/>
+        <title>🧘🏻‍♂️Healthy Facts🥗</title>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left-side">
+                <div class="nav-link active-nav">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">    
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>EDGARD ALLAN PAZOS I.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="portafolio-items">
+
+                
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/water.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Make sure you drink at least 8 glasses of water a day.
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/legumes.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                They are rich in fiber and vegetable protein, include them in your diet.
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/whole-grains.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                They are our most efficient and healthy source of energy.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Fruits.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Rich in fiber, vitamins and antioxidants, eat at least 4 a day.
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Berries.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Berries are 50 times more antioxidant than common fruits, eat at least 50 gr a day.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Veggies.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                They are a real medicine, they should fill 2/3 of your plate.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Green\ leaves.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Green leafy vegetables are known to be one of the most antioxidant, they keep our heart and brain young.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/cruciferous.webp)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Cruciferous vegetables are known to have a great anticarcinogenic potential.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Nuts\ and\ seeds.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Rich in healthy fats and protein, you should eat at least 30 grams a day.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Flax.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Flaxseed contains 100 times more lignans than other foods, these are potent anticancer and anti-inflammatory, with a teaspoon of flaxseed a day is enough.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Spices.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                They are 100 times more antioxidant than any other vegetable, plus they give a great flavor to our dishes.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portafolio-item">
+                    <div class="portafolio-img" style="background-image:url(IMG/Relax.jpg)">
+                        <div class="img-text">
+                            <div class="subtitle">
+                                Take a moment a day to relax, meditate or do an activity you enjoy so that you live a more balanced, peaceful and fulfilling life.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portafolioItems = document.querySelectorAll('.portafolio-item');
+    portafolioItems.forEach((portafolioItem) => {
+        portafolioItem.addEventListener('mouseover', () => {
+            portafolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portafolioItem.addEventListener('mouseout', () => {
+            portafolioItem.childNodes[1].classList.remove('img-darken');
+        })
+
+    })
+</script>
+</html>

@@ -1,0 +1,131 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: "Abril Fatface", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+
+}
+
+.nav > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link a:hover {
+    color: black;
+}
+ .active-nav {
+    border-bottom: 1px solid black;
+ }
+
+ .active-nav a {
+    color: black !important;
+ }
+/* Portafolio Styles */
+
+.portafolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portafolio-item {
+    position: relative;
+}
+
+.portafolio-img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Needs to be more specific with selector */
+
+.img-text .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+
+}
+
+.img-text:hover .subtitle {
+    font-weight: 600;
+    color: black;
+}
+
+.img-darken .subtitle{
+    transition: 1s;
+    filter: brightness(2);
+    font-size: x-large;
+    width: 100%;
+    background-color: lightblue;
+}
+
+/* About page style*/
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+.profile-content {
+    padding: 30px;
+    
+}
+.profile-content p {
+    font-size: large;
+}
+
+.profile-content h1 {
+    color: lightseagreen;
+}
